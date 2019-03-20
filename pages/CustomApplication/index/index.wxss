@@ -1,0 +1,16 @@
+.title{
+  background: #06c;
+  display: flex;
+  color: #fff;
+  font-size: 1rem;
+  padding:.6rem;
+}
+
+.contents{
+  font-size: .8rem;
+   padding:1rem .6rem;
+}
+
+.controlItem{
+  margin-top: .5rem;
+} 

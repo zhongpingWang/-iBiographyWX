@@ -1,0 +1,17 @@
+
+<view class="controlItem">
+  <view>
+    <text wx:if="{{data.hideTitle==0}}">{{data.title}}</text>
+  </view>
+
+
+  <view> 
+    <picker class="choBox" bindchange="bindPickerChange" value="{{data.value[0]}}" range="{{options}}">
+      <view class="picker">
+      {{options[index]}}
+      </view>
+    </picker>
+  </view>
+
+
+</view>

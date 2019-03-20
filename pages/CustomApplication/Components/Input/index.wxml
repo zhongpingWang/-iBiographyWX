@@ -1,0 +1,12 @@
+
+
+<view class="controlItem">
+  <view>
+    <text wx:if="{{data.hideTitle==0}}">{{data.title}}</text>
+  </view>
+
+  <view>
+    <input class='myInput' type='text' placeholder="{{data.placeHolderText}}" value="{{data.value[0]}}"></input>
+  </view>
+
+</view>

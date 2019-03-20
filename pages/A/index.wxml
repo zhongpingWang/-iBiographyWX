@@ -1,0 +1,5 @@
+<!--pages/A/index.wxml-->
+<text>pages/A/index.wxml</text>
+<view class='abc'>
+sdf
+</view>

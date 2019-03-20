@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "MyLabel": "/pages/CustomApplication/Components/Label/index",
+    "MyInput": "/pages/CustomApplication/Components/Input/index",
+    "MyRadio": "/pages/CustomApplication/Components/Radio/index",
+    "MyCheckBox": "/pages/CustomApplication/Components/CheckBox/index",
+    "MySelect": "/pages/CustomApplication/Components/Select/index",
+    "MyDate": "/pages/CustomApplication/Components/Date/index",
+    "RangeDate": "/pages/CustomApplication/Components/RangeDate/index"
+
+    
+  },
+  "navigationBarTitleText": "我的应用"
+}

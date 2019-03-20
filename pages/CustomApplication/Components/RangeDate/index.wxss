@@ -1,0 +1,13 @@
+ 
+.controlItem{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+} 
+
+
+.selDate{
+  margin-top: .5rem;
+  border:1px #ccc solid;
+  padding:.5rem;
+}

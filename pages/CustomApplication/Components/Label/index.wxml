@@ -1,0 +1,3 @@
+<view>
+  <text>{{data.value[0]}}</text>
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages": [
+   "pages/CustomApplication/index/index",
+   
+    "pages/index/index",
+    "pages/location/location",
+    "pages/A/index",
+    "pages/BottomTab/index",
+    
+    "pages/logs/logs"
+    
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/BottomTab/index",
+        "text": "日志"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

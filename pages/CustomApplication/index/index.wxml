@@ -1,0 +1,33 @@
+
+
+<view class="myAppSite">
+
+  <view class='baseInfo'>
+      <text class='title'>基本信息</text>
+      <view class='contents'>
+        <text>啥都没有</text>
+      </view>
+  </view>
+
+
+   <view class='baseInfo'>
+      <text class='title'>表单信息</text>
+      <view class='contents'>
+
+        <view class="controlItem" wx:key="item" wx:for="{{array.data.layout.fields}}"> 
+            <MyLabel wx:if="{{item.type=='Label'}}" data="{{item}}"></MyLabel>
+            <MyInput wx:elif="{{item.type=='Input'}}" data="{{item}}"></MyInput>  
+            <MyRadio wx:elif="{{item.type=='Radio'}}" data="{{item}}"></MyRadio>  
+            <MyCheckBox wx:elif="{{item.type=='CheckBox'}}" data="{{item}}"></MyCheckBox>  
+            <MySelect wx:elif="{{item.type=='Select'}}" data="{{item}}"></MySelect>  
+             <MyDate wx:elif="{{item.type=='Date'}}" data="{{item}}"></MyDate>  
+              <RangeDate wx:elif="{{item.type=='RangeDate'}}" data="{{item}}"></RangeDate>  
+        
+            
+        </view>
+
+        
+      </view>
+  </view>
+
+</view>

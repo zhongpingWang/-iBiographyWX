@@ -1,0 +1,101 @@
+<!--pages/location/location.wxml-->
+
+<view class='myContainer'>
+
+ <button open-type="getUserInfo" >333</button>
+
+<canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas>
+
+<view wx:key="item" wx:for="{{[1,2,3,4,5,6,7,8,9]}}">
+  <MyText wx:if="{{item%2==0}}" title="{{item}}" bind:aaa="testaaa"> </MyText> 
+</view>
+
+
+
+
+  <view class='topNav'>
+
+    <view>
+      <text class='icon-tianqi8 iconfont'>中国天气</text>
+    </view>
+
+    <view class='rightIcon'>
+      <text class='icon-shouye iconfont'></text>
+      <text class='icon-shouye iconfont iconUser'></text>
+    </view>
+
+
+  </view>
+
+
+  <view class='weatherDetail'>
+
+    <view class='city'>
+
+      <view class='address'>
+        <text class='iconfont icon-yintian area'>上海市|青浦区</text>
+        <text class='floor'>上海市政府(人民大道北）</text>
+      </view>
+
+      <view class='updateDate'>
+        <text>20:58更新</text>
+      </view>
+    </view>
+
+
+    <view class='temperature'>
+
+      <view class='number'>
+        24
+        <view class='fahrenheit'>o</view>
+      </view>
+
+      <view class='condition'>阴</view>
+
+    </view>
+
+    <view class='power'>
+      <text>东北风0级</text>
+      <text>相对湿度 71%</text>
+    </view>
+
+  </view>
+
+
+
+  <view class='hourDetial'>
+
+    <view class='title'>逐小时预报</view>
+
+
+    <scroll-view scroll-x class='hourList'>
+
+      <view class='item' wx:key="item" wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13]}}">
+        <view class='hourWeather' style="{{styleStr}}">
+          <text>{{item}}时</text>
+          <text class='icon icon-tubiaozhizuomobanyihuifu-1 iconfont'></text>
+          <text>24o</text>
+
+        </view>
+
+      </view>
+    </scroll-view>
+
+    <view class='charBox'> 
+      <canvas  canvas-id="lineCanvas"  class='lineWeather'></canvas>
+    </view>
+
+
+  <view class='lifeBox'>
+    <view data-sid="{{item}}"  bindtap="tapNavigate" class='item' wx:key="item" wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}">
+      <text>{{item}}</text>
+    </view>
+  
+  </view>
+
+
+
+  </view>
+
+
+</view>

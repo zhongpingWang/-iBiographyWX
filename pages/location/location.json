@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "MyText": "/pages/components/MyText/index"
+  },
+  "navigationBarTitleText":"天气预报"
+
+}

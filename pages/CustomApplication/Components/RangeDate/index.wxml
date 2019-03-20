@@ -1,0 +1,23 @@
+
+<view class="controlItem">
+  <view>
+    <text wx:if="{{data.hideTitle==0}}">{{data.title}}</text>
+  </view>
+
+
+<view class="dateBox"> 
+  <picker class="selDate" mode="date" value="{{dateStart}}" bindchange="bindStartChange">
+    <view class="picker">
+    {{dateStart}}
+    </view>
+  </picker>
+</view>
+
+<view class="dateBox"> 
+  <picker class="selDate" mode="date" value="{{dateEnd}}" bindchange="bindEndChange">
+    <view class="picker">
+    {{dateEnd}}
+    </view>
+  </picker>
+</view>
+</view>

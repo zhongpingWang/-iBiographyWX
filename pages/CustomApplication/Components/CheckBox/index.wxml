@@ -1,0 +1,20 @@
+
+
+<view class="controlItem">
+  <view>
+    <text wx:if="{{data.hideTitle==0}}">{{data.title}}</text>
+  </view>
+
+  <view>
+
+    <checkbox-group class="checkboxGroup">
+
+      <label class="checkbox" wx:key="item" wx:for="{{data.option}}">
+        <checkbox value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+
+    </checkbox-group> 
+  
+  </view>
+
+</view>

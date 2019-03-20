@@ -1,0 +1,8 @@
+/* pages/A/index.wxss */
+@import "./b.wxss"
+
+
+.abc{
+  color:red;
+  
+}
